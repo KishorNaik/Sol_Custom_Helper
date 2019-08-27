@@ -1,0 +1,26 @@
+﻿@model Sol_Custom_Helper.Models.Persons.PersonModel
+
+@using Sol_Custom_Helper.Helper
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<form asp-controller="PersonCustomHelperDemo" asp-action="OnSubmit">
+
+    <div class="container">
+
+        @await Html.PersonSelectionAsync(Model)
+
+        <div class="row">
+            <div class="col-12">
+                @await Html.ButtonAsync("btnSubmit", "Submit", "btn btn-primary", ButtonModel.ButtonType.Submit)
+            </div>
+        </div>
+
+    </div>
+
+
+</form>

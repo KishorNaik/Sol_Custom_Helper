@@ -1,0 +1,25 @@
+﻿@model Sol_Custom_Helper.Models.Persons.PersonModel
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<div class="row">
+    <div class="col-12">
+        <h3>User Section</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-3">
+        <div class="form-group">
+            <label for="txtFirstName">First Name:</label>
+            <input id="txtFirstName" class="form-control" asp-for="Users.FirstName" />
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="form-group">
+            <label for="txtLastName">Last Name:</label>
+            <input id="txtLastName" class="form-control" asp-for="Users.LastName" />
+        </div>
+    </div>
+</div>

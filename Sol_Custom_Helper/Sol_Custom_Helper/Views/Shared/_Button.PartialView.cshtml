@@ -1,0 +1,15 @@
+﻿@model Sol_Custom_Helper.Models.ButtonModel
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@if (Model.Type == ButtonModel.ButtonType.Button)
+{
+    <input id="@Model.Id" type="button" value="@Model.Value" class="@Model.CssClassName" />
+}
+else
+{
+    <input id="@Model.Id" type="submit" value="@Model.Value" class="@Model.CssClassName" />
+}
+
+

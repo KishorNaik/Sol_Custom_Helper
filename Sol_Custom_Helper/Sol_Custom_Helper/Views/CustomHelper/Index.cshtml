@@ -1,0 +1,12 @@
+﻿@using  Sol_Custom_Helper.Helper
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+@await Html.ButtonAsync("btnSubmit", "Submit", "btn btn-primary", ButtonModel.ButtonType.Submit)
+
+
+@await Html.ButtonAsync("btnSubmit1", "Submit", "btn btn-danger", ButtonModel.ButtonType.Button)
